@@ -3,3 +3,4 @@
 pages/__pycache__/
 pages/__pycache__/__init__.cpython-38.pyc
 tests/__pycache__/test_reddit.cpython-38-pytest-5.2.2.pyc
+tests/__pycache__/conftest.cpython-38-pytest-5.2.2.pyc

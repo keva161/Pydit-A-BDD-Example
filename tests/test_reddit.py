@@ -5,6 +5,7 @@ These tests will cover the required functionality for our Selenium bot.
 
 from pages.RedditHomePage import RedditHomePage
 from pages.RedditSearchPage import RedditSearchPage
+from pages.RedditSubRedditPage import RedditSubRedditPage
 
 def test_pydit_functionality(browser):
     
@@ -20,7 +21,8 @@ def test_pydit_functionality(browser):
     SearchPage.ClickOnSubreddit()
      
     # And I view the first post in the subreddit
-    # TODO
+    SubRedditPage = RedditSubRedditPage(browser)
+    SubRedditPage.ClickOnFirstPost()
     
     # And I download the picture
     # TODO

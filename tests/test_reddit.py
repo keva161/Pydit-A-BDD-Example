@@ -6,6 +6,7 @@ These tests will cover the required functionality for our Selenium bot.
 from pages.RedditHomePage import RedditHomePage
 from pages.RedditSearchPage import RedditSearchPage
 from pages.RedditSubRedditPage import RedditSubRedditPage
+from pages.RedditPostPage import RedditPostPage
 
 def test_pydit_functionality(browser):
     
@@ -25,7 +26,8 @@ def test_pydit_functionality(browser):
     SubRedditPage.ClickOnFirstPost()
     
     # And I download the picture
-    # TODO
+    PostPage = RedditPostPage(browser)
+    PostPage.DownloadThePicture()
     
 
-    raise Exception("Incomplete Test")
+    #raise Exception("Incomplete Test")

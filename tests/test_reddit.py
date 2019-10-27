@@ -10,24 +10,21 @@ from pages.RedditPostPage import RedditPostPage
 
 def test_pydit_functionality(browser):
     
-    # Given that I want to goto Redditp
+    # Given that I want to goto Reddit.
     HomePage = RedditHomePage(browser)
     HomePage.GoTo()
 
     # When I want to view the latest memes.
     HomePage.SearchForMemes()
 
-    # Then I access the subreddit
+    # Then I access the subreddit.
     SearchPage = RedditSearchPage(browser)
     SearchPage.ClickOnSubreddit()
      
-    # And I view the first post in the subreddit
+    # And I view the first post in the subreddit.
     SubRedditPage = RedditSubRedditPage(browser)
     SubRedditPage.ClickOnFirstPost()
     
-    # And I download the picture
+    # And I download the picture.
     PostPage = RedditPostPage(browser)
     PostPage.DownloadThePicture()
-    
-
-    #raise Exception("Incomplete Test")

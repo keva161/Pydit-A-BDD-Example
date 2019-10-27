@@ -1,4 +1,4 @@
-# Py-Dit (A Selenium TDD example)
+# PyDit (A Selenium TDD example)
 
 A simple bot written in Python 3.8 that uses Selenium to access Reddit, interact with the webpages and downloads a lovely picture.
 

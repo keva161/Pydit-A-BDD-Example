@@ -18,3 +18,5 @@ PyTest will also be used to ensure that all these steps are passing.
 To run the test you will need Python, PIPenv, Selenium and Pytest.
 
 Then run the command `pipenv run python -m pytest`.
+
+![](https://kevintuck.co.uk/images/meme.png)()

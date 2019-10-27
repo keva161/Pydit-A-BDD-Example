@@ -1,7 +1,8 @@
 """
 This file contains the methods and elements for interacting with the Reddit home page.
 """
-import selenium.webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 
 class RedditHomePage:
 
@@ -12,4 +13,5 @@ class RedditHomePage:
         self.browser.get("http://reddit.com")
         
     def SearchForMemes(self):
-        self.browser.find_element_by_id("header-search-bar")
+        search_box = self.browser.find_element_by_name("q")
+        search_box.send_keys("memes" + Keys.RETURN)

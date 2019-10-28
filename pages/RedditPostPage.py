@@ -3,10 +3,8 @@
 This file contains the methods and elements for interacting with a Reddit post.
 """
 from selenium.webdriver.common.by import By
-import selenium.webdriver
+import selenium
 import urllib.request
-
-import urllib
 
 class RedditPostPage:
 
@@ -14,5 +12,10 @@ class RedditPostPage:
         self.browser = browser
 
     def DownloadThePicture(self):
-        with open('meme.png', 'wb') as file:
-            file.write(self.browser.find_elements_by_xpath("//a[img]")[1].screenshot_as_png)
+        img = []
+        img = self.browser.find_elements_by_xpath("//img[contains(@alt, 'Post')]")
+        
+        urllib.request.urlretrieve(img[0].get_attribute("src"), "meme.png")
+
+        
+ 

@@ -9,6 +9,8 @@ from pages.RedditSubRedditPage import RedditSubRedditPage
 from pages.RedditPostPage import RedditPostPage
 
 def test_pydit_functionality(browser):
+
+    
     
     # Given that I want to goto Reddit.
     HomePage = RedditHomePage(browser)

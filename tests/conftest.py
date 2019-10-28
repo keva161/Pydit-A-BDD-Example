@@ -10,7 +10,7 @@ def browser():
     prefs = {"profile.default_content_setting_values.notifications" : 2}
     chrome_options.add_experimental_option("prefs",prefs)
     
-    b = selenium.webdriver.Chrome(chrome_options=chrome_options)
+    b = selenium.webdriver.Chrome(options=chrome_options)
 
     # Implicit waits are not advised. But including one here for demo purposes
     

@@ -14,4 +14,7 @@ class RedditSubRedditPage:
         post = self.browser.find_elements_by_xpath("//h3")[0]
         post.click()
 
+    def PageTitle(self):
+        return self.browser.title
+
 

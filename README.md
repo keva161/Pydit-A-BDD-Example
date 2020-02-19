@@ -1,8 +1,8 @@
-# PyDit (A Selenium TDD example)
+# PyDit (A Selenium BDD example)
 
 A simple bot written in Python 3.8 that uses Selenium to access Reddit, interact with the webpages and downloads a lovely picture.
 
-This is written purely for fun but will act as a great example of how to use TDD to drive your automation test case development.
+This is written purely for fun but will act as a great example of how to use BDD to drive your automation test case development.
 
 Here are the results that must be achieved:
 
